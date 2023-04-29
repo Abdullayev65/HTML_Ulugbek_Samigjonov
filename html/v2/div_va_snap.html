@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Block va Inline</title>
+        <link rel="stylesheet" href="stillar.css">
+
+        <style>
+            .black_back {
+                background-color: black;
+            }
+            .b2 {
+                background-color: darkslategray;
+            }
+            .c1 {
+                color: chartreuse;
+            }
+            .c2 {
+                color: rgb(221, 198, 69);
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Containers </h1>
+        <div class="black_back c1">
+            DIV container 1
+        </div>
+        <div class="black_back c2">
+            DIV container 2
+        </div>
+
+        <snap class="black_back c1">
+            SNAP Container 1
+        </snap>
+        <span>empty span</span>
+        <snap class="black_back c2">
+            SNAP Container 2
+        </snap>
+        
+
+        <p  class="black_back c2">
+            Paragrf ..... <span  class="b2 c1">Snap...</span> ....
+        </p>
+        <a >ok body a</a> <a  class="black_back c1">ok body a</a>
+
+    </body>
+
+</html>
