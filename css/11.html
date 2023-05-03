@@ -1,55 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header section -->
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Asosiy</a>
-                </li>
-                <li>
-                    <a href="#">Men Haqimda</a>
-                </li>
-                <li>
-                    <a href="#">Xizmatlar</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Sheriklar</a>
-                </li>
-                
-            </ul>
-        </nav>
-
-    </header>
+    <div class="container">
+        <header>
+            <nav class="main-navigation">
+                <ul>
+                    <li class="main-navigation__item">
+                        <a href="#">Asosiy</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Men Haqimda</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Xizmatlar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+    </div>
     <!-- /Header section -->
 
     <!-- Main section -->
-    <section id="main-section">
-        <h1>Asosiy qism</h1>
-    </section>
+    <div class="container">
+        <section id="main-section" class="main-section">
+            <div class="main-section__info">
+                <h4 class="main-section__welcome to-uppercase">Assaloomu Aleykum</h4>
+                <h1 class="main-section__introduction">I am Abdullayev</h1>
+                <h3 class="main-section__position">Web Developer</h3>
+                <div class="main-section__social-networks">
+                    <a href="https://t.me/Abdullayev_65">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="https://github.com/Abdullayev65">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <button type="button" class="button main-section__action">
+                    mening ishlarim
+                </button>
+            </div>
+            <div class="main-section__image">
+                <img src="images/me_:)_redTshort.jpg" alt="my pic">
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </div>
     <!-- /Main section -->
 
+    <!-- Statistics -->
+    <div class="container">
+        <section class="statitics" id="statitics">
+            <div class="statistics__item">
+                <h3 class="statitics__number">
+                    15k+
+                </h3>
+                <p class="statistics__title">
+                    mamnun mijozlar
+                </p>
+            </div>
+            <div class="statistics__item">
+                <h3 class="statitics__number">
+                    12k+
+                </h3>
+                <p class="statistics__title">
+                    Yordam
+                </p>
+            </div>
+            <div class="statistics__item">
+                <h3 class="statitics__number">
+                    9/10
+                </h3>
+                <p class="statistics__title">
+                    o'rtacha reyting
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- /Statistics -->
+
+
     <!-- About me section -->
-    <section id="about-me">
-        <h1>About me</h1>
-    </section>
+    <div class="container">
+        <section class="about-me" id="about-me">
+            <div class="about-me__image">
+                <img src="images/cat.jpg" alt="it's my pic">
+            </div>
+            <div class="about-me__info">
+                <h5 class="section-subtitle">
+                    Men haqimda
+                    <span class="blur-line"></span>
+                </h5>
+                <h3 class="section-title">
+                    web developer
+                </h3>
+                <p class="about-me__description">
+                    I'm a web developer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                </p>
+                <button type="button" class="button to-uppercase about-me__action">
+                    CV Ko'chirib olish
+                </button>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </div>
     <!-- /About me section -->
 
-    <!-- Service section -->
-    <section id="about-me">
-        <h1>Mening xizmatlarim</h1>
-    </section>
-    <!-- /Service section -->
+    <!-- Services section -->
+    <div class="container">
+        <section class="services" id="services">
+            <h5 class="section-subtitle">
+                Mening xizmatlarim
+                <span class="blur-line"></span>
+            </h5>
+            <h2 class="section-title">
+                Men taklif
+                <br>
+                qiladigan xizmatlar
+            </h2>
+            <div class="sevices__cards">
+                <div class="service-card">
+                    <img class="service-card__icon" src="images/cat.jpg" alt="Service 1">
+                    <h5 class="service-card__title">
+                        Dasturlash
+                    </h5>
+                    <p class="service-card__description">
+                        I'm a web developer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                    <a href="#" class="service-card__link">more</a>
+                </div>
+                <div class="service-card">
+                    <img class="service-card__icon" src="images/icon-1.jpg" alt="Service 1">
+                    <h5 class="service-card__title">
+                        Dasturlash
+                    </h5>
+                    <p class="service-card__description">
+                        I'm a web developer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                    <a href="#" class="service-card__link">more</a>
+                </div>
+                <div class="service-card">
+                    <img class="service-card__icon" src="images/laptop_emploee.png" alt="Service 1">
+                    <h5 class="service-card__title">
+                        Dasturlash
+                    </h5>
+                    <p class="service-card__description">
+                        I'm a web developer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                    <a href="#" class="service-card__link">more</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- /Services section -->
     
     <!-- Clients section -->
     <section id="about-me">
@@ -77,7 +200,6 @@
 
     <!-- Footer section -->
     <footer>
-        <nav>
             <ul>
                 <li>
                     <a href="#">Asosiy</a>
@@ -97,9 +219,7 @@
                 <li>
                     <a href="#">Sheriklar</a>
                 </li>
-                
             </ul>
-        </nav>
     </footer>
     <!-- /Footer section -->
 
