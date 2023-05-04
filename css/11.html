@@ -7,8 +7,8 @@
 </head>
 <body>
     <!-- Header section -->
-    <div class="container">
-        <header>
+    <header class="main-header">
+        <div class="container">
             <nav class="main-navigation">
                 <ul>
                     <li class="main-navigation__item">
@@ -32,8 +32,8 @@
                     
                 </ul>
             </nav>
-        </header>
-    </div>
+        </div>
+    </header>
     <!-- /Header section -->
 
     <!-- Main section -->
@@ -175,15 +175,103 @@
     <!-- /Services section -->
     
     <!-- Clients section -->
-    <section id="about-me">
-        <h1>Mening mijojlarim</h1>
-    </section>
+    <div class="container">
+        <section class="clients" id="clients">
+            <h4 class="clients-subtitle">
+                Mening mijojlarim
+                <div class="blur-line"></div>
+            </h4>
+            <h2 class="clients-title">
+                Hurmatli mijojlarim
+                <br>
+                Men Haqimda
+            </h2>
+            <div class="client-item">
+                <div class="client-item__image">
+                    <img src="images/cat.jpg" alt="my client pic">
+                </div>
+                
+                <div class="client-item__info">
+                    <h2 class="client-item__name">
+                        Abdushukurov Islom
+                    </h2>
+                    <h4 class="client-item__position">
+                        My Friend
+                    </h4>
+                    <h4 class="client-item__review">
+                        Good friend    . . . . . . . . . . . . . . . 
+                        . . . . . . . . . . . . . . . . . . . . . . . 
+                        . . . . . . . . . . . . . . . . . . . . . . . . 
+                        . . . . . . . . . . . . . . . . . .
+                    </h4>
+                    <div class="client-item__rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+    </div>
     <!-- /Clients section -->
 
     <!-- Partfolio section -->
-    <section id="partfolio">
-        <h1>Partfolio</h1>
-    </section>
+    <div class="container">
+        <section id="portfolio" class="portfolio">
+            <div class="section-subtitle">
+                Mening ishlarim
+                <span class="blur-line"></span>
+            </div>
+            <div class="section-title">
+                Mening so'ngi
+                <br>
+                Ishlarinmni ko'ring!
+            </div>
+            <ul class="portfolio-filters">
+                <li class="active">
+                    Hammasi
+                </li>
+                <li >
+                    Mashhurlai
+                </li>
+                <li>
+                    Birinchilari
+                </li>
+                <li>
+                    So'ngilari
+                </li>
+            </ul>
+            <div class="portfolio-items">
+                <div class="portfolio-item portfolio-item-1">
+                    <img src="images/cat_cs.jpg" class="portfolio-item__image" alt="cat pic 1">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Portfolio item 1</a>
+                        </h4>
+                        <p>
+                            Ishim haqida
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-item portfolio-item-2">
+                    <img src="images/cat_cs.jpg" class="portfolio-item__image" alt="cat pic 2">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Portfolio item 2</a>
+                        </h4>
+                        <p>
+                            Ishim haqida
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- /Partfolio section -->
 
     <!-- Blog section -->
