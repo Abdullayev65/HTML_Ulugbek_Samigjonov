@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background</title>
+    <style>
+        .all {
+            width: 1000px;
+            text-align: center;
+        }
+        .all div {
+            height: 500px;
+            border: 10px #FFD805 solid;
+            margin-bottom: 10px;
+        }
+        .b1 {
+            color: cornflowerblue;
+            font-size: 52px;
+            font-weight: bold;
+            background-image: url("images/cat_cs.jpg");
+            background-size: cover;
+        }
+        .p2{
+            border-radius: 40%;
+            filter: invert() blur(2px) opacity(50%) hue-rotate(180deg);
+        }
+        .b3 {
+            background-image: linear-gradient(dodgerblue, #FFD805);
+        }
+        .b2 {
+            background-image: radial-gradient(orangered, greenyellow);
+        }
+    </style>
+
+</head>
+<body>
+<div class="all">
+    <div class="b1">
+       My Cat
+    </div>
+    <div class="b2">
+        <img src="images/cat_cs.jpg" alt="cat pic" class="p2">
+    </div>
+    <div class="b3">
+        <img src="images/cat_cs.jpg" alt="cat pic">
+    </div>
+</div>
+</body>
+</html>

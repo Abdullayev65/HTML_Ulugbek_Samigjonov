@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Some Others</title>
+    <style>
+        .container {
+            margin: 20px auto;
+            width: 1140px;
+        }
+
+        .button {
+            padding: 10px 25px;
+            text-transform: uppercase;
+            background-color: yellowgreen;
+            color: #05364D;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: forestgreen;
+            color: #FFD805;
+            border-radius: 16px;
+        }
+
+        /*  Radio   */
+        .form-control {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .custom-radio {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 24px;
+            width: 24px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+
+        .form-control:hover .custom-radio {
+            background-color: #607077;
+        }
+
+        .form-control input:checked ~ .custom-radio {
+            background-color: #05364D;
+        }
+
+        .custom-radio:after {
+            top: 8px;
+            left: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: white;
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .form-control input:checked ~ .custom-radio:after {
+            display: block;
+        }
+
+        /* Browserni defoult radio buttoni yashirish*/
+        .form-control input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /*  /Radio  */
+
+        /* Checkbox */
+        .fc-checkbox {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .custom-checkbox {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 24px;
+            width: 24px;
+            background-color: #ddd;
+            border-radius: 33%;
+        }
+
+        .fc-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .fc-checkbox:hover .custom-checkbox {
+            background-color: #607077;
+        }
+
+        .fc-checkbox input:checked ~ .custom-checkbox:after {
+            display: block;
+        }
+
+        .custom-checkbox:after {
+            top: 4px;
+            left: 8px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-radius: 33%;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+
+        .fc-checkbox input:checked ~ .custom-checkbox {
+            background-color: #05364D;
+        }
+
+
+        /* /Checkbox */
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <button type="button" class="button">
+        next
+    </button>
+</div>
+<hr>
+<!-- Radio -->
+<div class="container">
+    <h1>Style berilgan radio buttonlar</h1>
+    <label class="form-control">
+        radio 1
+        <input type="radio" name="radio_pk" value="radio 1">
+        <span class="custom-radio"></span>
+    </label>
+    <label class="form-control">
+        radio 2
+        <input type="radio" name="radio_pk" value="radio 2">
+        <span class="custom-radio"></span>
+    </label>
+    <label class="form-control">
+        radio 3
+        <input type="radio" name="radio_pk" value="radio 3">
+        <span class="custom-radio"></span>
+    </label>
+</div>
+<!-- /Radio -->
+<hr>
+<!-- Checkbox-->
+<div class="container">
+    <h1>Style berilgan Checkbox buttonlar</h1>
+    <label class="fc-checkbox">
+        checkbox 1
+        <input type="checkbox" name="checkbox 1" value="checkbox 1">
+        <span class="custom-checkbox"></span>
+    </label>
+    <label class="fc-checkbox">
+        checkbox 2
+        <input type="checkbox" name="checkbox 2" value="checkbox 2">
+        <span class="custom-checkbox"></span>
+    </label>
+    <label class="fc-checkbox">
+        checkbox 3
+        <input type="checkbox" name="checkbox 3" value="checkbox 3">
+        <span class="custom-checkbox"></span>
+    </label>
+</div>
+<!-- /Checkbox-->
+
+
+</body>
+</html>
