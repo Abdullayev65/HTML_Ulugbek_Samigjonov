@@ -41,3 +41,18 @@
 .contact__send {
     margin-top: 1.875rem;
 }
+
+@media only screen and (max-width: 991px) {
+    .half-row {
+        width: 100%;
+    }
+
+    .contact-input__email,
+    .contact-input__name {
+        padding: 0;
+    }
+
+}
+
+
+
