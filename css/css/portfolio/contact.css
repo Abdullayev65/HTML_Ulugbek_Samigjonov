@@ -1,18 +1,18 @@
 
 .contact__title {
-    margin-top: 100px;
+    margin-top: 6.25rem;
     color: rgb(18,53,80);
 }
 
 .contact-inputs input,  .contact-inputs textarea {
     width: 100%;
-    padding: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 1rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
     border: 1px solid #f0e9ff;
     border-radius: 8px;
-    padding-left: 18px;
-    font-size: 13px;
+    padding-left: 1.125rem;
+    font-size: 0.8125rem;
     background-color: transparent;
     color: #495057;
     box-sizing: border-box;
@@ -31,13 +31,13 @@
 }
 
 .contact-input__name {
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 .contact-input__email {
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
 .contact__send {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
