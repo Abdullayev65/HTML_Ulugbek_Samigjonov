@@ -23,19 +23,15 @@
     color: darkblue;
 }
 
-.half-row {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
+.half-flex {
+    display: flex;
+
 }
 
-.contact-input__name {
-    padding-right: 0.625rem;
-}
-
+.contact-input__name,
 .contact-input__email {
     padding-left: 0.625rem;
+    flex: 1;
 }
 
 .contact__send {
@@ -43,8 +39,8 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .half-row {
-        width: 100%;
+    .half-flex {
+        flex-direction: column;
     }
 
     .contact-input__email,

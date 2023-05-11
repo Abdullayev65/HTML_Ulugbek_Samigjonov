@@ -1,11 +1,8 @@
 /* Main section */
 .main-section {
     padding: 2.5rem 1.875rem;
-}
-
-.main-section > div {
-    width: 50%;
-    float: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-section__image {
@@ -55,15 +52,17 @@
 /* Statistics section */
 .statistics {
     padding-top: 6.25rem;
+    display: flex;
 }
 
 .statistics__item {
-    display: inline-block;
     background-color: #F8FAFF;
     text-align: center;
     padding: 5px 0.625rem;
     margin: 1.25rem;
     width: 210px;
+    height: 10rem;
+    display: inline-block;
 }
 
 .statitics__number {
@@ -83,11 +82,12 @@
 /* About me */
 .about-me {
     padding: 6.25rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .about-me > div {
-    width: 50%;
-    float: left;
+    flex: 1;
 }
 
 .about-me__image img {
@@ -111,9 +111,12 @@
     padding-top: 3.75rem;
 }
 
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
 .service-card {
-    display: inline-block;
-    width: 30%;
     padding: 3.75rem 1.875rem;
     background-color: #F8FAFF;
     margin-right: 3%;
@@ -181,10 +184,12 @@
     color: #05364D;
 }
 
+.client-item {
+    display: flex;
+}
+
 .client-item > div {
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
+    flex: 1;
 }
 
 .client-item__image img {
@@ -321,11 +326,11 @@
 
 .blog-items {
     margin-top: 3.125rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .blog-item {
-    display: inline-block;
-    width: 30%;
     margin-right: 3%;
     /*box-sizing: border-box;*/
 }
@@ -388,10 +393,10 @@
 /* Partners */
 .partners {
     padding-top: 6.25rem;
+    display: flex;
 }
 
 .partner {
-    display: inline-block;
     padding: 0 2.8125rem;
 }
 
@@ -413,6 +418,7 @@
     .statistics {
         padding-top: 1rem;
         text-align: center;
+        justify-content: center;
     }
 
     /*  About me    */
@@ -428,7 +434,7 @@
         font-size: 3rem;
     }
 
-    .about-me__image img {
+    .about-me__image {
         display: none;
     }
 
@@ -437,14 +443,22 @@
         padding: 1.5rem 0;
     }
 
+    .service-cards {
+        flex-wrap: wrap;
+    }
+
     .service-card {
-        width: 45%;
+        flex-basis: 45%;
         margin-bottom: 20px;
     }
 
     /*  Clients */
     .clients {
         padding: 1.5rem 0;
+    }
+
+    .client-item {
+        flex-direction: column;
     }
 
     .client-item > div {
@@ -457,18 +471,21 @@
         padding: 1.5rem 0;
     }
 
+    .blog-items {
+        flex-wrap: wrap;
+    }
     .blog-item {
-        width: 45%;
+        flex-basis: 45%;
         margin-bottom: 20px;
     }
 
     /*    Partners    */
     .partners {
         padding: 1.5rem 0;
+        flex-direction: column;
     }
 
     .partner {
-        display: block;
         padding: 0;
         text-align: center;
         margin-bottom: 10px;
@@ -484,6 +501,10 @@
     }
 
     /*  Statists    */
+
+    .statistics {
+        flex-direction: column;
+    }
     .statistics__item {
         width: 100%;
         margin-bottom: 20px;
@@ -493,7 +514,7 @@
 
     /*  Services   */
     .service-card {
-        width: 100%;
+        flex-basis: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -514,8 +535,11 @@
     }
 
     /*    Blog    */
+    .blog-items {
+        flex-direction: column;
+    }
+
     .blog-item {
-        width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
